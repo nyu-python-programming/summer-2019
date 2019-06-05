@@ -18,21 +18,23 @@ precipitation = input("What sort of precipitation is there, if any?")
 #winter jacket - precipitation: clear, none; temp <=32F
 #no jacket - precipitation: clear, none; temp: 60F - ?
 
-temp = int(temp)
+temp = int(temp) # convert to int
 
-if (precipitation == "rain" or precipitation == "drizzle") and (temp >=5 and temp  <= 60) :
+precipitation = precipitation.lower() # convert to lowercase
+
+if (precipitation.find("rain") >= 0 or precipitation.find("drizz") >= 0 ) and (temp >=5 and temp  <= 60) :
     print("Wear a rain jacket, please!")
-
-elif (precipitation == "sleet" or precipitation == "hail") and (temp >= 32):
+elif precipitation.find("rain") >= 0 :
+    print("Wear a breathable rain jacket, please, but stay cool!")
+elif (precipitation.find("sleet") >= 0 or precipitation.find("hail") >= 0) and (temp >= 32):
     print("Wear a rain jacket, please!")
-
-elif (precipitation == "snow" or precipitation == "sleet" or precipitation ==  "hail") and (temp >=0 and temp <=32):
+elif (precipitation.find("snow") >= 0 or precipitation.find("sleet") >= 0 or precipitation.find("hail") >= 0) and (temp >=0 and temp <=32):
     print("Wear a Canada Goose winter jacket, please!")
 
-elif (precipitation == "clear" or precipitation == "none") and (temp <=32):
+elif (precipitation.find("clear") >= 0 or precipitation.find("none") >= 0) and (temp <=32):
     print("Wear a North Face jacket.")
           
-elif (precipitation == "clear" or precipitation == "none") and (temp >=60):
+elif (precipitation.find("clear") >= 0 or precipitation.find("none") >= 0) and (temp >=60):
     print("Don't wear a jacket")
 
 else:
