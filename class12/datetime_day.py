@@ -43,12 +43,12 @@ Return the name of the day, based on its number, where 0 is Monday, 1 is Tuesday
 @arg num The number of the day
 @return The name of the day
 """
-def getDayNameBetter(dayNum):
+def getDayNameBetter(day_num):
     # make a list of days... these are automatically indexed starting from 0
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satuday", "Sunday"]
     
     # return the day in the list at the given index position
-    return days[dayNum]
+    return days[day_num]
 
 
 # a function containing the main logic of the program

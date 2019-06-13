@@ -30,6 +30,7 @@ def print_list_of_files(list_of_files):
     print() # line break
     
     print("Here is a nicer listing of all these files:")
+    list_of_files.sort()
     
     #loop through each filename in the list
     for filename in list_of_files:
@@ -46,6 +47,8 @@ The main logic of the program.
 def main():
     #get the current working directory (by default the folder where this program is saved)
     cwd = os.getcwd()
+    
+    print("The current working directory is {}".format(cwd) )
     
     # get the list of files in this directory
     files = get_list_of_files(cwd)
