@@ -1,5 +1,5 @@
 #open a text file in read mode
-f = open("mydata.txt", "r")
+f = open("data.txt", "r")
 
 #get the full text from the file
 the_text = f.read()
@@ -9,6 +9,10 @@ words = the_text.split()
 
 #loop through each word and analyze it
 for word in words:
+    
+    # remove punctuation
+    word = word.replace('.', '')
+    word = word.replace(',', '')
 
     #print for debugging
     print(word)
