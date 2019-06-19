@@ -1,3 +1,11 @@
+"""
+Open up a text file, and loop through every line.  
+Count lines and print out the fourth line and all subsequent lines.
+
+@author Foo Barstein
+@date 19 June 2019
+"""
+
 #open a text file in read mode
 f = open("data.txt", "r")
 
@@ -19,5 +27,5 @@ for line in f:
         # if so, print out the line
         print(line)
     
-# it's polite to pythong to close the file
+# it's polite to python to close the file
 f.close()

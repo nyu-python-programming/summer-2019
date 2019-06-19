@@ -1,3 +1,10 @@
+"""
+Append a new random number to a file every time the program is run.
+
+@author Foo Barstein
+@date 19 June 2019
+"""
+
 import random
 
 # open the file in write mode

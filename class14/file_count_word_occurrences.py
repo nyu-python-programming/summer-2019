@@ -1,3 +1,11 @@
+"""
+Place all words from a text file into a list.  
+Count how many times a given word occurs.
+
+@author Foo Barstein
+@date 19 June 2019
+"""
+
 #open a text file in read mode
 f = open("data.txt", "r")
 

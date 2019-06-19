@@ -1,3 +1,10 @@
+"""
+Write a random number to a file
+
+@author Foo Barstein
+@date 19 June 2019
+"""
+
 import random
 
 # open the file in write mode
