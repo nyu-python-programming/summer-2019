@@ -7,7 +7,11 @@ Validate user input with a while loop.
 
 correct_response = "please"
 
-users_response = ""
+users_response = "help"
 
 while users_response != correct_response:
     users_response = input("What's the magic word? ")
+
+print('Thanks!')
+
+
